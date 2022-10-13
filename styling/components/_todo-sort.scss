@@ -1,26 +1,26 @@
 @use "../core/mixins";
 
 .sort-button-box {
-    @include mixins.flex(row, flex-start, center, 14px);
-    flex-wrap: wrap;
+  @include mixins.flex(row, flex-start, center, 14px);
+  flex-wrap: wrap;
 
-    @include mixins.tablet-and-up {
-        flex-wrap: nowrap;
-    }
+  @include mixins.mobile-and-up {
+    flex-wrap: nowrap;
+  }
 }
 
 .sort-button {
-    @include mixins.flex(row, center, center);
-    @include mixins.btn(3px, 0.8rem);
-    background-color: #fff;
-    color: #001220;
-    border: 2px solid #F7CACA;
-    padding: 5px 10px;
-    transition: 0.2s all ease-in-out;
+  @include mixins.flex(row, center, center);
+  @include mixins.btn(3px, 0.8rem);
+  background-color: #fff;
+  color: #001220;
+  border: 2px solid #f7caca;
+  padding: 5px 10px;
+  transition: 0.2s all ease-in-out;
 
-    &:hover {
-        background-color: #F7CACA;
-        border: 2px solid #F7CACA;
-        color: #001220;
-    }
+  &:hover {
+    background-color: #f7caca;
+    border: 2px solid #f7caca;
+    color: #001220;
+  }
 }

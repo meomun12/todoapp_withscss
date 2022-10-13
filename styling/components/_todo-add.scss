@@ -1,40 +1,40 @@
 @use "../core/mixins";
 
 .btn {
-    @include mixins.btn();
-    transition: background-color 0.1s ease-in-out;
+  @include mixins.btn();
+  transition: background-color 0.1s ease-in-out;
 
-    &:hover {
-        background-color: #e9b7b7;
-        color: #001220;
-    }
+  &:hover {
+    background-color: #e9b7b7;
+    color: #001220;
+  }
 
-    @include mixins.tablet-and-up {
-        padding: 12px 25px;
-    }
+  @include mixins.mobile-and-up {
+    padding: 12px 25px;
+  }
 }
 
 .input-box {
-    @include mixins.flex(row, center, center, 10px);
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 0px 30px;
+  @include mixins.flex(row, center, center, 10px);
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0px 30px;
 }
 
 input {
-    width: 100%;
-    padding: 10px 0px;
-    font-size: 1rem;
-    border: none;
-    border-bottom: 2px solid #000;
+  width: 100%;
+  padding: 10px 0px;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #000;
 
-    @include mixins.tablet-and-up {
-        font-size: 1.1rem;
-    }
+  @include mixins.mobile-and-up {
+    font-size: 1.1rem;
+  }
 }
 
 input:focus {
-    outline: none;
-    border: none;
-    border-bottom: 2px solid #000;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #000;
 }
